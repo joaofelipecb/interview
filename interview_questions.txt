@@ -1,0 +1,101 @@
+2	Motivation for work at AlphaSights	What is your main motivation for waiting to work at AlphaSights?	\N
+1	About your self	Tell me about your self	\N
+3	Learned from this experience	Tell me what you learned from this experience	\N
+4	Interested in AlphaSights	Why are you interested in AlphaSights?	\N
+7	Hold you back from accepting this position	What is something that would hold you back from accepting this position?	\N
+8	5 years	Where you see yourself in 5 years?	\N
+9	In your own words what AlphaSights do	In your own words what AlphaSights do?	\N
+10	Factors you consider	What factors you will consider when you apply for a company?	\N
+11	BREAD Process	Understanding the BREAD process and it is used at Alpha Sigths	\N
+12	Why work at AlphaSights	Why do you want to work at AlphaSights?	\N
+13	About yourself and your career	Tell me about yourself and your carrer	\N
+14	A time in which you failed	Describe a time in which you failed, and how did you respond to that failure	\N
+15	Why not a competing firm	Why Alpha Sights and not a competing firm?	\N
+17	Fit in the role	How do you fit in the role at AlphaSights?	\N
+5	Other jobs applying to	What are some other job positions you have been applying to? How are the different of similar to the path that you would take in AlphaSights?	\N
+18	Weekend	An ideal way to spend your weekend	\N
+19	Carrer goal	What’s your career goal and how AlphaSights can help you with this?	\N
+21	Know about the job	Tell me what you know about the job	\N
+23	How much alphasights will pay	How much will alphasights pay me (an expert) for my hour long phone call?	\N
+24	People in this role responsible for	What are people in this role responsible for?	\N
+25	Knowledge chain	What is the knowledge chain (or something like that)?	\N
+26	A client want to launch a product in a new country	You are supporting a client in a launch of a product in a new country. What issues do you think would need to be considered prior to the launch and what experts would be required?	\N
+28	Name some of AlphaSight's customers	Name some of AlphaSight's customers	\N
+29	After graduation	What are you looking to do after graduation?	\N
+22	A job anywhere else	If you could be offered a job anywhere else, where would you want to get the offer? If you could pick any job role and industry, what would it be?	\N
+30	Targets and hitting the scores?	Do you get motivated working towards targets and hitting the scores?	\N
+31	Free time	How do you spend your free time?	\N
+32	Worst job experience	What was your worst job experience?	\N
+33	Strengths	What are your strengths?	\N
+34	Weakness	What are your weakness?	\N
+35	Biggest failure in life	What is your biggest failure in life?	\N
+36	Receiving and searching for information	How do we go about receiving and searching for information?	\N
+37	What's your academic background?	What's your academic background?	\N
+16	Why you pick your college specifally?	Why you pick your college specifally? Why you chose your major?	\N
+39	Challenging experience	Tell me a challenging experience	\N
+40	What question do you have for us?	What question do you have for us?	\N
+6	Biggest academic achievement	What has been your biggest academic achievement? What is the most impactful thing you have done at your college/university?	\N
+41	A time you pursuaded someone	Tell me about a time you pursuaded someone	\N
+43	A brief introduction about yourself	Give a brief introduction about yourself	\N
+44	You like about the position	What do you like about the position?	\N
+45	You want to learn in this position	What do you want to learn in this position?	\N
+46	2 years	Where do you see yourself in two years?	\N
+47	Study law and to work in a corporation now	Why did you study law and why do you want to work in a corporation now?	\N
+48	Teammates strengths/weaknesses	How would your previous teammates describe what are your strengths/weaknesses?	\N
+49	Outside of academics	What do you do outside of academics?	\N
+50	Stage do you look forward to the most	In all the stages of a Client Associate's work, which stage do you look forward to the most?	\N
+51	Most important decision	What is the most important decision you've ever made in your life?	\N
+52	Positive feedback	Tell me an occasion where you received positive feedback	\N
+42	AlphaSights business model functions	Explain how AlphaSights business model functions. Describe Alphasights.	\N
+53	Why AlphaSights	Why AlphaSights?	\N
+54	Part of BREAD process more important	Which part of the BREAD process do you think is most important/difficult?	\N
+55	Apply de BREAD process	Describe our BREAD process and apply it.	\N
+56	Past experiences	Tell me about your past experiences	\N
+38	Resume	Dive into your resume. Walk me through your resume.	\N
+57	Your career vision	Tell me your career vision?	\N
+58	Ask a question	Do you have any questions to ask me?	\N
+59	Hire you	Why should we hire you?	\N
+61	Most ambitious goal	What is the most ambitious goal you have set for yourself?	\N
+62	Recent news	What do you think about the recent news?	\N
+63	Drew you to AlphaSights	What drew you to AlphaSights?	\N
+64	Find expert	How would you find the right expert for X scenario?	\N
+65	Friends about you	How does your friends say about you?	\N
+66	Back to freshman year of college (also got asked about high school)	If you could go back to freshman year of college (also got asked about high school) what would you do differently? Also what were your plans/dreams?	\N
+67	Reason why you’d leave alphasights?	What’s one reason why you’d leave alphasights?	\N
+68	Favorite/least favorite class in university	What was your favorite/least favorite class in university?	\N
+69	Name 3 thinks from your resume	Name 3 thinks you liked about x job from your resume	\N
+70	Traits should have?	What traits do you think an AS associate should have?	\N
+27	Why engineering?	Why do you want to go in to engineering?	\N
+71	Engaged in your community	How have you engaged in your community?	\N
+72	Dificult things of your life	What's one of the hardest things you've been through in your life and what did you learn from it?	\N
+73	consulting vs AlphaSights	What is the difference between AlphaSights and a consulting firm?	\N
+74	Value chain	What is the value chain?	\N
+75	When can you start the job?	When can you start the job?	\N
+76	Extracurriculares	Tell us about your extracurriculars?	\N
+77	Criticism	Do you take criticism well?	\N
+79	Career achievement	Your most impressive career achievement	\N
+80	Motivations	What motivates me?	\N
+81	Career aspiration	What is your career aspiration in the future?	\N
+82	Who would you reach out to?	Who would you reach out to? Why?	\N
+83	Dream job	What would your dream job be?	\N
+84	Resolve a conflict	Describe a time when you have to resolve a conflict.	\N
+85	Why do we want to hire you?	Why do we want to hire you?	\N
+86	Break a deal?	If a client wants to break a deal, how would you speak to them in order to keep the relationship with your client, but not letting them break your deal?	\N
+87	Challenge	What was a challenge for you?	\N
+88	Work under pressure	How do you work under pressure?	\N
+89	Sheep or wolf	If you could be either a sheep or a wolf, what would you be and why?	\N
+90	Book	Tell us about one book that effect on you deeply	\N
+91	Movie	Tell us about one movie that effect on you deeply.	\N
+92	Recruting vs AlphaSights	What is the difference between a recruiting and what AlphaSights do?	\N
+20	Biggest achivement?	What was your biggest achievement? The thing you’re most proud of?	\N
+93	Multiple tasks	How do you manage multiple tasks with deadlines?	\N
+94	Perform in a team	How do you perform in a team?	\N
+95	AlphaSights' competitors	Who are the Alpha Sights competitors and what makes them different?	\N
+96	Your background	Tell me about your background	\N
+97	3 sentences	Describe AlphaSights in less than 3 sentences	\N
+98	Colleagues about you	How would your colleagues describe you?	\N
+60	Skills do you want to continue to work on as a person	What skills do you want to continue to work on as a person? Which skills you want to enhance in the next 3 years?	\N
+78	Previous experience	Tell me about your previous experience. Tell me about your time in X place, what did you learn and take on to your next position.	\N
+99	Recent time you feel under pressure	When is your most recent time you feel under pressure?	\N
+100	Strategic	Describe a time you were being strategic?	\N
+101	Prepared for this position	How has your current role prepared you for this position?	\N
