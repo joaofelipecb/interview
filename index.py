@@ -28,6 +28,7 @@ def application(environ, start_response):
         buffer = buffer + '<td>' + str(rec[0]) + '</td>'
         buffer = buffer + '<td>' + str(rec[1]) + '</td>'
         buffer = buffer + '<td>' + str(rec[2]) + '</td>'
+        buffer = buffer + '<td>' + str(rec[3]) + '</td>'
         buffer = buffer + '</tr>'
     buffer = buffer + '</table>'
     buffer = buffer + '</html>'
