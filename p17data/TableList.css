@@ -1,0 +1,29 @@
+body{
+	font-family:calibri;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+tr{
+
+}
+
+tr:nth-child(odd){
+	background-color:#ffffee;
+}
+
+tr:nth-child(even){
+	background-color:#f5e5e5;
+}
+
+th{
+
+}
+
+td{
+	padding:5px;
+	border:1px solid #000000;
+}
+
