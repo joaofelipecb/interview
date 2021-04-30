@@ -1,5 +1,6 @@
 import os
 import psycopg2
+import random
 from sysconfig import get_paths
 import sys
 
@@ -12,15 +13,16 @@ os.chdir(_this_path)
 import config
 
 def application(environ, start_response):
-    start_response('200 OK', [('Content-Type', 'text/html')])
-    buffer = ''
     if environ['PATH_INFO'] == '/questions':
+        start_response('200 OK', [('Content-Type', 'text/html')])
+        buffer = ''
         con = psycopg2.connect(host=config.host, database=config.database, user=config.user, password=config.password)
         sql = 'select * from interview_questions order by interview_question_id'
         cur = con.cursor()
         cur.execute(sql)
         buffer = buffer + '<html>'
         buffer = buffer + '<head>'
+        buffer = buffer + '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
         buffer = buffer + '<link rel="stylesheet" href="p17data/TableList.css">'
         buffer = buffer + '</head>'
         buffer = buffer + '<body>'
@@ -42,7 +44,19 @@ def application(environ, start_response):
         buffer = buffer + '</table>'
         buffer = buffer + '</body>'
         buffer = buffer + '</html>'
+        return [str(buffer).encode('ascii','ignore')]
+    elif environ['PATH_INFO'] == '/question/random':
+        con = psycopg2.connect(host=config.host, database=config.database, user=config.user, password=config.password)
+        sql = 'select interview_question_id from interview_questions'
+        cur = con.cursor()
+        cur.execute(sql)
+        recset = cur.fetchall()
+        randomChoice = random.choice(recset)[0]
+        start_response('302 Found', [('Location', str(randomChoice))])
+        return ['1'.encode('ascii','ignore')]
     elif environ['PATH_INFO'][:10] == '/question/':
+        start_response('200 OK', [('Content-Type', 'text/html')])
+        buffer = ''
         id = int(environ['PATH_INFO'][10:])
         con = psycopg2.connect(host=config.host, database=config.database, user=config.user, password=config.password)
         sql = 'select * from interview_questions where interview_question_id = %(interview_question_id)s'
@@ -50,9 +64,11 @@ def application(environ, start_response):
         cur.execute(sql,{'interview_question_id':id})
         buffer = buffer + '<html>'
         buffer = buffer + '<head>'
+        buffer = buffer + '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
         buffer = buffer + '<link rel="stylesheet" href="../p17data/ItemStyle.css">'
         buffer = buffer + '</head>'
         buffer = buffer + '<body>'
+        buffer = buffer + '<a href="random">random</a>'
         buffer = buffer + '<dl>'
         recset = cur.fetchall()
         for rec in recset:
@@ -63,11 +79,17 @@ def application(environ, start_response):
         buffer = buffer + '</dl>'
         buffer = buffer + '</body>'
         buffer = buffer + '</html>'
+        return [str(buffer).encode('ascii','ignore')]
     elif environ['PATH_INFO'] == '/p17data/TableList.css':
+        start_response('200 OK', [('Content-Type', 'text/html')])
         buffer = open('p17data/TableList.css','r').read()
+        return [str(buffer).encode('ascii','ignore')]
     elif environ['PATH_INFO'] == '/p17data/ItemStyle.css':
+        start_response('200 OK', [('Content-Type', 'text/html')])
         buffer = open('p17data/ItemStyle.css','r').read()
+        return [str(buffer).encode('ascii','ignore')]
     else:
+        start_response('200 OK', [('Content-Type', 'text/html')])
         buffer = str(environ['PATH_INFO'])
-    return [str(buffer).encode('ascii','ignore')]
+        return [str(buffer).encode('ascii','ignore')]
 
