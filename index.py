@@ -75,7 +75,7 @@ def application(environ, start_response):
             buffer = buffer + '<dt>id</dt><dd>' + str(rec[0]) + '</dd>'
             buffer = buffer + '<dt>name</dt><dd>' + str(rec[1]) + '</dd>'
             buffer = buffer + '<dt>question</dt><dd>' + str(rec[2]) + '</dd>'
-            buffer = buffer + '<dt>answer</dt><dd>' + str(rec[3]) + '</dd>'
+            buffer = buffer + '<dt>answer <a href="#" onclick="document.getElementById(\'answer\').style.display = \'block\'">show</a></dt><dd id="answer" style="display:none;">' + str(rec[3]) + '</dd>'
         buffer = buffer + '</dl>'
         buffer = buffer + '</body>'
         buffer = buffer + '</html>'
