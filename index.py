@@ -1,7 +1,6 @@
 import os
 import psycopg2
 import random
-from sysconfig import get_paths
 import sys
 
 _this_path = os.path.split(__file__)[0]
@@ -17,7 +16,16 @@ def application(environ, start_response):
         start_response('200 OK', [('Content-Type', 'text/html')])
         buffer = ''
         con = psycopg2.connect(host=config.host, database=config.database, user=config.user, password=config.password)
-        sql = 'select * from interview_questions order by interview_question_id'
+        sql = '''select q.*, coalesce(a1.answer_text, a2.answer_text)
+from questions as q
+left join answers as a1
+on q.question_id = a1.question_id
+and a1.company_id = (select company_id from companies where company_name = 'Tesorio')
+left join answers as a2
+on q.question_id = a2.question_id
+and a2.company_id = (select company_id from companies where company_name = 'All')
+where coalesce(a1.company_id, a2.company_id) is not null
+order by q.question_id;'''
         cur = con.cursor()
         cur.execute(sql)
         buffer = buffer + '<html>'
@@ -47,7 +55,7 @@ def application(environ, start_response):
         return [str(buffer).encode('ascii','ignore')]
     elif environ['PATH_INFO'] == '/question/random':
         con = psycopg2.connect(host=config.host, database=config.database, user=config.user, password=config.password)
-        sql = 'select interview_question_id from interview_questions'
+        sql = 'select question_id from questions'
         cur = con.cursor()
         cur.execute(sql)
         recset = cur.fetchall()
@@ -59,9 +67,19 @@ def application(environ, start_response):
         buffer = ''
         id = int(environ['PATH_INFO'][10:])
         con = psycopg2.connect(host=config.host, database=config.database, user=config.user, password=config.password)
-        sql = 'select * from interview_questions where interview_question_id = %(interview_question_id)s'
+        sql = '''select q.*, coalesce(a1.answer_text, a2.answer_text)
+from questions as q
+left join answers as a1
+on q.question_id = a1.question_id
+and a1.company_id = (select company_id from companies where company_name = 'Tesorio')
+left join answers as a2
+on q.question_id = a2.question_id
+and a2.company_id = (select company_id from companies where company_name = 'All')
+where coalesce(a1.company_id, a2.company_id) is not null
+and q.question_id = %(question_id)s
+;'''
         cur = con.cursor()
-        cur.execute(sql,{'interview_question_id':id})
+        cur.execute(sql,{'question_id':id})
         buffer = buffer + '<html>'
         buffer = buffer + '<head>'
         buffer = buffer + '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
